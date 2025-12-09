@@ -1,0 +1,81 @@
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 22vh;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #99E2D0;
+  color: #008766;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.content {
+  padding: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.locationRestaux {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.favoriteButton {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favoriteButton:hover {
+  transform: scale(1.1);
+}
+
+.heartIcon {
+  width: 24px;
+  height: 24px;
+  color: #666;
+  transition: color 0.2s, fill 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favoriteButton:hover .heartIcon {
+  color: #9356DC;
+}
+
+.liked .heartIcon {
+  color: transparent;
+} 
