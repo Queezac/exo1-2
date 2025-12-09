@@ -36,8 +36,8 @@ export default function RestaurantCard({ name, location, image, isNew, slug }) {
           <div 
             className={styles.heartIcon} 
             onClick={(e) => {
-              e.preventDefault();
-              setLiked(!liked);
+               e.preventDefault();
+               setLiked(!liked);
             }}
           >
             <FontAwesomeIcon 
